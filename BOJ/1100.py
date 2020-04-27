@@ -29,8 +29,9 @@
 cnt = 0
 for i in range(8):
     board = list(map(str, input()))
-    if i % 2 == 0:
-        cnt += board[0::2].count('F')
-    else:
-        cnt += board[1::2].count('F')
+    cnt += board[i%2::2].count('F')
+    # if i % 2 == 0:
+    #     cnt += board[0::2].count('F')
+    # else:
+    #     cnt += board[1::2].count('F')
 print(cnt)
