@@ -1,17 +1,13 @@
 # 1110 더하기 사이클
 
-import sys
-def solution():
-    a = int(input())
-    num = a
-    cnt = 0
-    chk_num = '0'
-    new_num = a//10+a%10
-    a = a%10 + new_num%10
-    while chk_num != str(num):
-        new_num = new_num%10 + a%10
-        cnt += 1
-        chk_num = str(a%10) + str(new_num%10)
-        a = int(chk_num)
-    print(cnt)
-solution()
+tmp = inp = int(input())
+count = 0
+while True:
+    ten = tmp // 10
+    one = tmp % 10
+    res = ten + one
+    count += 1
+    tmp = int(str(tmp % 10) + str(res % 10))
+    if inp == tmp:
+        break
+print(count)
