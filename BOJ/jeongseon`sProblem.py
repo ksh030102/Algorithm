@@ -26,4 +26,4 @@ if cnt % 2 == 0:    # 현재 오전에서 짝수번 바뀌면 그대로 오전
     now = "오전"
 else:               # 현재 오전에서 홀수번 바뀌면 오후
     now = "오후"
-print(month, "월", day, "일", now, time,"시")
+print(month, "월", day, "일", now, time, "시")
