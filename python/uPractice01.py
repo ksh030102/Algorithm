@@ -45,7 +45,6 @@ class Book:
         for x in self.list:
             if name in x.name:
                 x.show()
-
 add = Address ('김성현', '010-9246-1739', 'suwon', 17)
 add1 = Address('김영훈', '010-0000-0000', 'hawseong', 18)
 add3 = Address('안현석', '010-9246-1739', 'suwon', 17)
@@ -64,3 +63,4 @@ book.show()
 # book.show()
 print('------------------')
 book.find('김성현')
+print(digit, "는 ", cnt, '번 들어있습니다.')
